@@ -87,7 +87,7 @@ BOT_TOKEN = read_bot_token()
 r = sr.Recognizer()
 bot = telebot.TeleBot(BOT_TOKEN)
 
-mongo_client = MongoClient('mongodb://localhost:27017/')
+mongo_client = MongoClient('mongodb://127.0.0.1:27017/')
 db = mongo_client['telegramDB']
 users_collection = db['users']
 
