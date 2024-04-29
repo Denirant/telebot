@@ -1,0 +1,4 @@
+if(message.content_type == 'voice'):
+    msg = bot.send_message(chat_id, '🔍Ой! Голосовой поиск может быть произведен только на главной странице.🤔')
+    bot.register_next_step_handler(msg, find_conent)
+    return
